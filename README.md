@@ -1,10 +1,8 @@
-<div align="center">
+div align="center">
 
 # 🚀 AWS 3-Tier Architecture Project
 
 ### Java Web Application Deployment using AWS Cloud
-
-
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-WebApp-red?style=for-the-badge)
@@ -25,27 +23,19 @@ This project demonstrates how companies deploy applications securely using **3-T
 A Java web application is hosted using separate layers:
 
 ### 🔹 1. Presentation Layer
-Handles user requests from browser.
-
-➡️ Used **Nginx Server** on Public EC2 Instance.
+Handles user requests from browser using **Nginx**.
 
 ### 🔹 2. Application Layer
-Runs business logic and Java application.
-
-➡️ Used **Apache Tomcat** on Private EC2 Instance.
+Runs business logic and Java application using **Apache Tomcat**.
 
 ### 🔹 3. Database Layer
-Stores application data securely.
-
-➡️ Used **Amazon RDS MariaDB**
+Stores data securely using **Amazon RDS MariaDB**.
 
 ---
 
+# 🏗️ Architecture Flow
 
-
-# 🔄 Project Flow
-
-```text
+```text id="y4hnpz"
 User Browser
      ↓
 Public IP
@@ -68,14 +58,14 @@ Internet Gateway	Public Internet
 NAT Gateway	Internet for Private Server
 RDS	Managed Database
 🖥️ Servers Created
-Server Name	Location	Purpose
-Jump Server	Public Subnet	Nginx Reverse Proxy
-App Server	Private Subnet	Tomcat Hosting
-Database	Private Subnet	Secure Storage
+Server Name	Purpose
+Jump Server	Nginx Reverse Proxy
+App Server	Tomcat Hosting
+Database	Secure Storage
 ⚙️ What I Did in This Project
 ✅ Step 1: Networking Setup
 Created custom VPC
-Created 3 subnets
+Created public and private subnets
 Attached Internet Gateway
 Created NAT Gateway
 Configured Route Tables
@@ -95,41 +85,23 @@ Installed:
 Java
 Apache Tomcat
 
-Started Tomcat server.
-
-Deployed Java WAR file.
+Started Tomcat server and deployed Java WAR file.
 
 ✅ Step 4: Reverse Proxy Setup
 
-Installed Nginx on Jump Server.
-
-Configured:
+Installed Nginx and configured:
 
 location / {
 proxy_pass http://Private-IP:8080/student/;
 }
 ✅ Step 5: Database Setup
 
-Created Amazon RDS MariaDB.
+Created Amazon RDS MariaDB and connected application database.
 
-Connected Java app with database using JDBC connector.
-
-📸 Project Output
-🔹 AWS Architecture
-<p align="center"> <img src="images/output1.png" width="80%"> </p>
-🔹 Tomcat Running
-<p align="center"> <img src="images/output2.png" width="80%"> </p>
-🔹 Java Application Form
-<p align="center"> <img src="images/output3.png" width="80%"> </p>
-🔹 Database Connected
-<p align="center"> <img src="images/output4.png" width="80%"> </p>
 🎯 Final Result
-
-When user opens Public IP:
-
 User → Nginx → Tomcat → Database
 
-Application runs successfully and stores user data in database.
+Application runs successfully and stores data securely.
 
 📚 Skills Learned
 
@@ -141,7 +113,6 @@ Application runs successfully and stores user data in database.
 ✅ Java Deployment
 ✅ RDS Database
 ✅ Cloud Security
-✅ Real Production Architecture
 
 💼 Best For
 AWS Resume Project
@@ -152,7 +123,7 @@ Linux Admin Interview
 Akshada Kiran Doke
 
 Cloud & DevOps Learner ☁️
-Linux | AWS | GitHub | Automation
+Linux | AWS | GitHub
 
 ⭐ Support
 
