@@ -1,4 +1,4 @@
-div align="center">
+
 
 # 🚀 AWS 3-Tier Architecture Project
 
