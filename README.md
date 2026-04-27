@@ -4,7 +4,7 @@
 
 ### Java Web Application Deployment using AWS Cloud
 
-<img src="images/banner.png" width="100%">
+
 
 ![AWS](https://img.shields.io/badge/AWS-Cloud-orange?style=for-the-badge)
 ![Java](https://img.shields.io/badge/Java-WebApp-red?style=for-the-badge)
@@ -41,13 +41,7 @@ Stores application data securely.
 
 ---
 
-# 🏗️ Architecture Diagram
 
-<p align="center">
-<img src="images/architecture.png" width="90%">
-</p>
-
----
 
 # 🔄 Project Flow
 
